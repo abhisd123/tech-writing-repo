@@ -29,3 +29,20 @@ This endpoint requires a Bearer token in the authorization header.
   "payment_method": "pm_card_visa",
   "receipt_email": "customer@example.com"
 }
+
+## Response
+
+```json
+{
+  "id": "pi_1Hh1XYZ",
+  "object": "payment_intent",
+  "amount": 2500,
+  "currency": "usd",
+  "status": "requires_confirmation",
+  "client_secret": "pi_1Hh1XYZ_secret_abc123"
+}
+
+## Error Codes
+
+- 400 Bad Request: Missing required parameters.<br>
+- 401 Unauthorized: Invalid or missing API key.<br>
