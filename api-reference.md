@@ -29,6 +29,7 @@ This endpoint requires a Bearer token in the authorization header.
   "payment_method": "pm_card_visa",
   "receipt_email": "customer@example.com"
 }
+```
 
 ## Response
 
@@ -41,7 +42,7 @@ This endpoint requires a Bearer token in the authorization header.
   "status": "requires_confirmation",
   "client_secret": "pi_1Hh1XYZ_secret_abc123"
 }
-
+```
 ## Error Codes
 
 - 400 Bad Request: Missing required parameters.<br>
