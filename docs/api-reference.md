@@ -6,6 +6,12 @@ The `POST /v1/payment_intents` endpoint creates a new Payment Intent object to t
 This endpoint requires a Bearer token in the authorization header.
 `Authorization: Bearer <sk_live_token>`
 
+!!! Side Note "Alternative Authentication Methods"
+    Depending on your integration type, you can also authenticate using:
+    
+    * **Basic Auth:** Use your secret API key as the username and leave the password blank.
+    * **OAuth 2.0:** Required if your application is acting on behalf of another user. Use the `Authorization: Bearer <oauth_token>` header.
+
 ## Request
 
 **Endpoint:** `POST https://api.example-pay.com/v1/payment_intents`  
