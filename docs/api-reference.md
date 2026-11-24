@@ -12,12 +12,14 @@ This endpoint requires a Bearer token in the authorization header.
     * **Basic Auth:** Use your secret API key as the username and leave the password blank.
     * **OAuth 2.0:** Required if your application is acting on behalf of another user. Use the `Authorization: Bearer <oauth_token>` header.
 
-## Request
+## Endpoint Mapping
+
+### Request
 
 **Endpoint:** `POST https://api.example-pay.com/v1/payment_intents`  
 **Content-Type:** `application/json`
 
-### Body Parameters
+#### Body Parameters
 
 | Parameter | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -26,7 +28,9 @@ This endpoint requires a Bearer token in the authorization header.
 | `payment_method` | string | No | The ID of the payment method to attach to this Payment Intent. |
 | `receipt_email` | string | No | Email address where the receipt should be sent upon successful payment. |
 
-### Request Example
+## JSON payload Mapping
+
+=== Request Example
 
 ```json
 {
@@ -37,7 +41,7 @@ This endpoint requires a Bearer token in the authorization header.
 }
 ```
 
-## Response
+=== Response
 
 ```json
 {
