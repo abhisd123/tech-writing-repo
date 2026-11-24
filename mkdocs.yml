@@ -4,8 +4,18 @@ theme:
   palette:
     primary: indigo
     accent: indigo
+  features:
+    - content.code.copy # Adds a copy button to all code blocks
+
 nav:
   - Home: index.md
   - API Reference: api-reference.md
   - Release Notes: release-notes.md
   - Architecture Guide: architecture-guide.md
+
+markdown_extensions:
+  - admonition # Enables colored warning/note callout boxes
+  - pymdownx.details # Allows collapsible UI blocks
+  - pymdownx.superfences # Allows complex nested code blocks
+  - pymdownx.tabbed:
+      alternate_style: true # Enables clickable tabs for code blocks
