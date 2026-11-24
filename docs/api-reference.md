@@ -30,7 +30,7 @@ This endpoint requires a Bearer token in the authorization header.
 
 ## JSON payload Mapping
 
-=== Request Example
+### Request Example
 
 ```json
 {
@@ -41,7 +41,7 @@ This endpoint requires a Bearer token in the authorization header.
 }
 ```
 
-=== Response
+### Response
 
 ```json
 {
